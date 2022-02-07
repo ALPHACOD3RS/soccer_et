@@ -22,7 +22,7 @@ liveScoreSlider(LiveScoreModel livescoremodel) {
               ),
             ],
             borderRadius: BorderRadius.circular(15),
-            color: Colors.white.withOpacity(0.9),
+            color: Colors.deepPurpleAccent.withOpacity(1),
           ),
 
           child: Container(
@@ -77,14 +77,14 @@ liveScoreSlider(LiveScoreModel livescoremodel) {
                                 boxShadow: [
                                   BoxShadow(
                                     color: Colors.green.withOpacity(0.9),
-                                    spreadRadius: 3,
-                                    blurRadius: 5,
+                                    spreadRadius: 1,
+                                    blurRadius: 4,
                                     offset: Offset(
                                         0, 0), // changes position of shadow
                                   ),
                                 ],
                                 borderRadius: BorderRadius.circular(15),
-                                color: Colors.white.withOpacity(0.9),
+                                //color: Colors.green.withOpacity(0.1),
                               ),
                               child: Image.asset('assets/images/rec.png'),
                             ),
@@ -111,13 +111,17 @@ liveScoreSlider(LiveScoreModel livescoremodel) {
                             Text(
                               livescoremodel.HteamScore,
                               style: TextStyle(
-                                  fontSize: 25, fontWeight: FontWeight.bold),
+                                  color: Colors.grey.shade100,
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.bold),
                             ),
                           ],
                         )),
                     Text(':',
                         style: TextStyle(
-                            fontSize: 25, fontWeight: FontWeight.bold)),
+                            color: Colors.grey.shade100,
+                            fontSize: 25,
+                            fontWeight: FontWeight.bold)),
                     Container(
                         // margin: EdgeInsets.only(left: 20),
                         // width: 60,
@@ -127,7 +131,9 @@ liveScoreSlider(LiveScoreModel livescoremodel) {
                             Text(
                               livescoremodel.AteamScore,
                               style: TextStyle(
-                                  fontSize: 25, fontWeight: FontWeight.bold),
+                                  color: Colors.grey.shade100,
+                                  fontSize: 25,
+                                  fontWeight: FontWeight.bold),
                             ),
                             SizedBox(width: 10),
                             Image.asset(livescoremodel.AteamImg),
@@ -147,7 +153,7 @@ liveScoreSlider(LiveScoreModel livescoremodel) {
                         Text(
                           livescoremodel.HteamName,
                           style: TextStyle(
-                              color: Colors.grey.shade700,
+                              color: Colors.grey.shade100,
                               fontSize: 18,
                               fontWeight: FontWeight.w700),
                         ),
@@ -157,7 +163,7 @@ liveScoreSlider(LiveScoreModel livescoremodel) {
                         Text(
                           livescoremodel.AteamName,
                           style: TextStyle(
-                              color: Colors.grey.shade700,
+                              color: Colors.grey.shade100,
                               fontSize: 18,
                               fontWeight: FontWeight.w700),
                         ),
