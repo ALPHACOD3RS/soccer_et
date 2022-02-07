@@ -23,14 +23,14 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 30,
             child: Image.asset(
               'assets/images/menu.png',
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
           Container(
             child: Text(
               'Matches',
               style: TextStyle(
-                color: Colors.white,
+                color: Colors.black,
                 fontWeight: FontWeight.bold,
                 fontSize: 23,
               ),
@@ -41,7 +41,7 @@ class _HomeScreenState extends State<HomeScreen> {
             height: 30,
             child: Image.asset(
               'assets/images/search.png',
-              color: Colors.white,
+              color: Colors.black,
             ),
           ),
         ],
@@ -52,7 +52,7 @@ class _HomeScreenState extends State<HomeScreen> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey.shade900,
+      //backgroundColor: Colors.grey.shade900,
       body: Container(
         child: Container(
           margin: EdgeInsets.all(10),
@@ -60,21 +60,23 @@ class _HomeScreenState extends State<HomeScreen> {
             children: [
               TopBar(),
               Divider(
-                // color: Colors.white,
+                color: Colors.white,
                 // thickness: 0.1,
+
                 height: 40,
               ),
               Container(
                 child: Text(
                   'Live Matches',
                   style: TextStyle(
-                      color: Colors.white,
+                      color: Colors.black,
                       fontSize: 23,
                       fontWeight: FontWeight.w600),
                 ),
               ),
               Divider(
                 height: 15,
+                color: Colors.white,
               ),
               Container(
                 width: double.infinity,
